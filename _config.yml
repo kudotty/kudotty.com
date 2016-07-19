@@ -3,25 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 人生をDevOps @kudotty
 subtitle:
-description:
-author: John Doe
-language:
-timezone:
+description: エンジニア人生、再デプロイブログ
+author: '@kudotty'
+language: ja
+timezone: Asia/Tokyo
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://kudotty.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -46,7 +45,10 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  静的サイトジェネレーター: static-site-generators
 tag_map:
+  静的サイトジェネレーター: static-site-generators
+  Hexo: hexo
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -63,9 +65,21 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/kudotty/kudotty.github.io.git
+  branch: master
+  message: "kudotty.com updated: {{ now('YYYY-MM-DD HH:mm:ss') }})"
+
+sitemap:
+    path: sitemap.xml
+
+# feed:
+#   type: atom
+#   path: feed/
+#   limit: false
+#   hub:
