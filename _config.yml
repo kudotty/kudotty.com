@@ -20,9 +20,9 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
-category_dir: categories
-code_dir: downloads/code
+tag_dir: tag
+category_dir: category
+code_dir: download/code
 i18n_dir: :lang
 skip_render:
 
@@ -76,7 +76,8 @@ deploy:
   message: "kudotty.com updated: {{ now('YYYY-MM-DD HH:mm:ss') }})"
 
 sitemap:
-    path: sitemap.xml
+    path:
+      sitemap.xml
 
 feed:
   type: atom
