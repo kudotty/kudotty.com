@@ -80,6 +80,6 @@ sitemap:
 
 feed:
   type: atom
-  path: atom.xml
+  path: /feed/atom.xml
   limit: false
   hub:
