@@ -78,8 +78,8 @@ deploy:
 sitemap:
     path: sitemap.xml
 
-# feed:
-#   type: atom
-#   path: feed/
-#   limit: false
-#   hub:
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
