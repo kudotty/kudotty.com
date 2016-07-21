@@ -81,6 +81,6 @@ sitemap:
 
 feed:
   type: atom
-  path: feed/atom.xml
+  path: /feed/atom.xml
   limit: false
   hub: http://pubsubhubbub.appspot.com/
