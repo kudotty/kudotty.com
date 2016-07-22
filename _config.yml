@@ -49,6 +49,8 @@ category_map:
 tag_map:
   静的サイトジェネレーター: static-site-generators
   Hexo: hexo
+  DocPad: docpad
+  Node.js: nodejs
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
