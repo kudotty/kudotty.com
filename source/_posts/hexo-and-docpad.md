@@ -17,17 +17,27 @@ date: 2016-07-19 17:19:15
 ## まずは、Hexoを使ってブログを構築してみた
 [![Hexo](http://i.imgur.com/35jOjbk.png)](https://hexo.io/)
 
-## Hexoのテーマは、このIcarusをベースにカスタマイズ
-[![Hexoテーマ Icarus](http://i.imgur.com/wMuHZym.png)](https://github.com/ppoffice/hexo-theme-icarus)
-
-Hexo公式の[テーマ一覧](https://hexo.io/themes/)をチェックするのは大変なんで、以下のページで紹介されてるテーマから選ぶのが近道。
+Hexo公式の[テーマ一覧](https://hexo.io/themes/)を全てチェックした結果、「使える」テーマは以下のページと同意見だった。
 
 [hexoでblogを書くためのオススメtheme\(テーマ\)一覧 \- tea Photography](https://tea3.github.io/p/hexo-blog-theme-16/)
 
-## Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあった
+## Hexoテーマはこの、Icarusをチョイスしカスタマイズ
+[![Hexoテーマ Icarus](http://i.imgur.com/wMuHZym.png)](https://github.com/ppoffice/hexo-theme-icarus)
+
+## Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う
 [Hexo コマンド\|Akanetrip](http://hatobane.github.io/hexo/hexo-command/)
 [Hexo 設定ファイル\|Akanetrip](http://hatobane.github.io/hexo/Hexo-config/)
 
-## DocPadも実際に触って
-比較検討してみたい
+## DocPadも実際に触ってみた
+- DocPadでは、テーマではなくスケルトン。パッケージやリポジトリが自動インストールされる
+- docpad run起動時のスケルトンの選択肢が20前後あるが、どれもどうもピンとこない
+- スケルトン自動インストール直後の表示が崩れてる
+- Unsupportedなスケルトンは、自動インストールでエラーが出たりする
+  
+つまり、DocPadはスケルトンを使わずスクラッチでやれってことなんだろう。
+
+## 結論。やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad
+DocPadプラグインの全リスト
+[npm \- packages with keyword ‘docpad-plugin’](https://www.npmjs.com/browse/keyword/docpad-plugin)
+  
 {% youtube EqdRW3I7CIc %}
